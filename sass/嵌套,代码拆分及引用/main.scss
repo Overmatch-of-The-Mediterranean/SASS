@@ -1,0 +1,6 @@
+// SASS文件的拆分，使用@import引入
+// SASS文件前加_，默认为是私有的SASS文件，只会被其他的SASS文件所引入
+
+@import 'variables';
+@import 'header';
+@import 'content';

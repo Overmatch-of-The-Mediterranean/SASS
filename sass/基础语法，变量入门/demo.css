@@ -1,0 +1,23 @@
+.header span {
+  color: white;
+}
+.header span:active {
+  color: #999999;
+}
+.header span:hover {
+  color: #ccc;
+}
+
+.title {
+  font-size: 20px;
+  border: 1px solid #000;
+}
+
+.subtitle {
+  font-size: 20px;
+}
+
+.text {
+  font-size: 20px;
+  border: 1px solid #000;
+}/*# sourceMappingURL=demo.css.map */

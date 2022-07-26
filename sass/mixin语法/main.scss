@@ -1,0 +1,9 @@
+@import './mixin';
+
+.header {
+    @include singleline-ellips(600px);
+}
+
+.content {
+    @include singleline-ellips(100px);
+}

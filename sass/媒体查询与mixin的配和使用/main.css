@@ -1,0 +1,19 @@
+.header {
+  width: 1000px;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    height: 500px;
+    width: 500px;
+  }
+}
+
+.footer {
+  color: green;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    height: 600px;
+    color: red;
+  }
+}/*# sourceMappingURL=main.css.map */

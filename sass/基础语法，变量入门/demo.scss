@@ -1,0 +1,63 @@
+// SASS是对css语法更进一步的拓展，SASS底层的编译器会把代码编译成css形式
+// SASS启动编译，点击下边蓝框中的watch
+// SASS有scss和sass两种后缀，但scss使用更方便
+// 两者区别就是在scss的基础上不能有{}和;
+
+
+
+
+
+
+// .header {
+//     span {
+//         color: red;
+//     }
+
+//     span:active {
+//         color: green;
+//     }
+
+//     span:hover {
+//         color: orange;
+//     }
+// }
+
+// SASS中的变量
+// SASS中的变量必须先定义后使用，否则会报错
+
+
+// SASS中的函数
+// lighten函数让颜色变浅%多少
+// darken函数让颜色变深%多少
+$color: #ccc;
+$font-size: 14px+6px;
+$border: 1px solid #000;
+
+.header {
+    span {
+        color: lighten($color, 20%);
+
+        &:active {
+            color: darken($color, 20%);
+        }
+
+        &:hover {
+            color: $color;
+        }
+    }
+
+}
+
+.title {
+    font-size: $font-size;
+    border: $border;
+}
+
+.subtitle {
+    font-size: $font-size;
+}
+
+.text {
+    font-size: $font-size;
+    border: $border;
+}

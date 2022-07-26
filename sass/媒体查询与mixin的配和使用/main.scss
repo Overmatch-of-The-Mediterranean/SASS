@@ -1,0 +1,50 @@
+// @content就是用来被@include ipad 后面花括号及其里面的内容替换的
+
+// @mixin和它的@content在编写响应式代码过程中，可以解决css代码中的许多实际的问题
+// 如，@media的冗余，以及当项目很大时，代码分散(看css文件中两种方式的css代码)，造成编写体验差的问题
+
+// .header {
+//     width: 1000px;
+// }
+
+// .footer {
+//     color: green;
+// }
+
+// @media screen and (min-width:768px) {
+//     .header {
+//         width: 500px;
+//         background-color: orange;
+//     }
+// }
+
+// @media screen and (min-width:768px) {
+//     .footer {
+//         color: red;
+//         background-color: orange;
+//     }
+// }
+
+
+@mixin ipad ($height) {
+    @media screen and (min-width:768px) {
+        height: $height;
+        @content
+    }
+}
+
+.header {
+    width: 1000px;
+
+    @include ipad(500px) {
+        width: 500px;
+    }
+}
+
+.footer {
+    color: green;
+
+    @include ipad (600px) {
+        color: red;
+    }
+}

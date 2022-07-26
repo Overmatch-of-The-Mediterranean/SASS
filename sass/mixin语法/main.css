@@ -1,0 +1,15 @@
+.header {
+  width: 600px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  background-color: red;
+}
+
+.content {
+  width: 100px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  background-color: red;
+}/*# sourceMappingURL=main.css.map */
